@@ -1,0 +1,1030 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+     width: 200px;
+    height: auto;
+    display: block;   /* Transforma a imagem em bloco */
+    margin-left: auto; /* Margem esquerda automática */
+    margin-right: auto; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    background:none;
+    color: #fff;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+.header-fundo {
+    background: url('./assets/fundo-barbearia.jpg') no-repeat center center fixed; /* Adicionado 'fixed' */
+    background-size: 100% auto;
+    min-height: 100vh; /* Use min-height em vez de height */
+    margin: 0;
+}
+
+
+p {
+    color: #D3AF37;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+section {
+    display: flex;
+    margin-top: 0;
+    padding-top: 0;
+}
+.services-image {
+     width: 500px;
+    height: auto;
+    display: flex; 
+    align-items:start;  /* Transforma a imagem em bloco */
+    margin-left: 020px; /* Margem esquerda automática */
+    margin-top: 360px;
+    
+}
+
+
+
+
+
+
+
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+
+.header-icons{
+    display: flex;
+    gap: 14px;
+    
+}
+
+.header-icons a:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+    color: #d94140;
+    }
+}
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }
+    
+}
+
+
+
+
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .header-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        i{
+            margin-top: 16px;
+            font-size: 34px;
+
+
+        }
+        }
+
+
+
+        .header-logo{
+            width:160px;
+            margin-top: 46px;
+        }
+
+        .header-button{
+            display: none;
+        }
+    }
+
+
+
+
+    .container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.bg-home{
+    position: relative;
+}
+
+
+.bg-home::before{
+    content: "";
+    position: absolute;
+   display: block;
+   background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), rgba(4, 15, 26, 0.8), #06121e), url("../assets/fundo-barbearia.jpg");
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 0;
+   opacity: 0.9;
+    
+}
+
+
+.hero{
+    color: #D3AF37;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 46px;
+
+    }
+
+    p{
+        text-align: center;
+        margin: 14px 0;
+        
+    }
+}
+
+.button-contact{
+    padding: 14px 28px;
+    color: #fff;
+    background-image: linear-gradient(to top, rgb(20, 20, 20), #D3AF37);
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+    
+.button-contact:hover{
+    animation: scaleButton 0.8s alternate infinite;
+    background-image: linear-gradient(to top, #D3AF37, rgb(20, 20, 20));
+    
+    
+}
+
+@keyframes scaleButton {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.07);
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        min-height: 60vh;
+        h1{
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero
+        
+        h1{
+            font-size: 24px;
+        }
+    }
+
+
+
+    .about{
+        background-color: black;
+        overflow: hidden;
+        color: #D3AF37;
+    min-height: 80v;
+    }
+
+    
+    .about-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 34px 14px 64px 14px;
+        
+        img{
+            max-width: 570px;
+        }
+    }
+
+    .about-content div{
+        flex: 1;
+    }
+
+    .about-description{
+        h2{
+            font-size: 38px;
+            margin-bottom: 24px;
+        }
+        p{
+    
+            margin-bottom: 14px;
+            line-height: 150%;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .about-content{
+            flex-direction: column;
+        }
+    }
+
+   .services{
+    background-color: #fff;
+    color: #06121e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+    
+   }
+
+   .services-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+    
+   }
+
+   .services-content p{
+    text-align: center;
+    line-height: 150%;
+    margin-bottom: 14px;
+    max-width: 780px;
+   }
+
+   .haircuts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+    
+   }
+   
+   .haircut{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px -1px 170px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    
+    img{
+        width: 100%;
+        max-width: 354px;
+        transition: transform .0.2s;
+    }
+    
+   }
+   .haircut img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+   }
+
+   .haircut-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: #fff;
+    z-index: 99;
+   }
+
+   .haircut-info button{
+    color: #fff;
+    background-color: #D3AF37;
+    border: 0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: default;
+    
+   }
+
+   @media screen and (max-width: 768px){
+    .haircuts{
+        flex-direction: column;
+    }
+
+    .haircut img{
+        max-width: 740px;
+    }
+   }
+
+   .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: #fff;
+   }
+   
+
+   .footer-icons{
+    display: flex;
+    gap: 8px;
+    color: #fff;
+   }
+
+
+   .btn-whatsapp{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+
+
+
+    img{
+        max-width: 74px;
+        transition: trasform 0.4s;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+   }
+
+   .btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #06121e;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+   }
+    
+   .btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+
+   }
+
+   @media screen and (max-width: 768px){
+    .btn-whatsapp{
+        img{
+            max-width: 64px;
+        }
+    }
+   }
+   iframe{
+    width: 100%;
+    height: 450px;
+    
+     
+   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+     width: 200px;
+    height: auto;
+    display: block;   /* Transforma a imagem em bloco */
+    margin-left: auto; /* Margem esquerda automática */
+    margin-right: auto; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    background:none;
+    color: #fff;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+.header-fundo {
+    background: url('./assets/fundo-barbearia.jpg') no-repeat center center fixed; /* Adicionado 'fixed' */
+    background-size: 100% auto;
+    min-height: 100vh; /* Use min-height em vez de height */
+    margin: 0;
+}
+
+
+p {
+    color: #D3AF37;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+section {
+    display: flex;
+    margin-top: 0;
+    padding-top: 0;
+}
+.services-image {
+     width: 500px;
+    height: auto;
+    display: flex; 
+    align-items:start;  /* Transforma a imagem em bloco */
+    margin-left: 020px; /* Margem esquerda automática */
+    margin-top: 360px;
+    
+}
+
+
+
+
+
+
+
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+
+.header-icons{
+    display: flex;
+    gap: 14px;
+    
+}
+
+.header-icons a:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+    color: #d94140;
+    }
+}
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }
+    
+}
+
+
+
+
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .header-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        i{
+            margin-top: 16px;
+            font-size: 34px;
+
+
+        }
+        }
+
+
+
+        .header-logo{
+            width:160px;
+            margin-top: 46px;
+        }
+
+        .header-button{
+            display: none;
+        }
+    }
+
+
+
+
+    .container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.bg-home{
+    position: relative;
+}
+
+
+.bg-home::before{
+    content: "";
+    position: absolute;
+   display: block;
+   background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), rgba(4, 15, 26, 0.8), #06121e), url("../assets/fundo-barbearia.jpg");
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 0;
+   opacity: 0.9;
+    
+}
+
+
+.hero{
+    color: #D3AF37;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 46px;
+
+    }
+
+    p{
+        text-align: center;
+        margin: 14px 0;
+        
+    }
+}
+
+.button-contact{
+    padding: 14px 28px;
+    color: #fff;
+    background-image: linear-gradient(to top, rgb(20, 20, 20), #D3AF37);
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+    
+.button-contact:hover{
+    animation: scaleButton 0.8s alternate infinite;
+    background-image: linear-gradient(to top, #D3AF37, rgb(20, 20, 20));
+    
+    
+}
+
+@keyframes scaleButton {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.07);
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .hero{
+        min-height: 60vh;
+        h1{
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero
+        
+        h1{
+            font-size: 24px;
+        }
+    }
+
+
+
+    .about{
+        background-color: black;
+        overflow: hidden;
+        color: #D3AF37;
+    min-height: 80v;
+    }
+
+    
+    .about-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 34px 14px 64px 14px;
+        
+        img{
+            max-width: 570px;
+        }
+    }
+
+    .about-content div{
+        flex: 1;
+    }
+
+    .about-description{
+        h2{
+            font-size: 38px;
+            margin-bottom: 24px;
+        }
+        p{
+    
+            margin-bottom: 14px;
+            line-height: 150%;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .about-content{
+            flex-direction: column;
+        }
+    }
+
+   .services{
+    background-color: #fff;
+    color: #06121e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+    
+   }
+
+   .services-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+    
+   }
+
+   .services-content p{
+    text-align: center;
+    line-height: 150%;
+    margin-bottom: 14px;
+    max-width: 780px;
+   }
+
+   .haircuts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+    
+   }
+   
+   .haircut{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px -1px 170px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    
+    img{
+        width: 100%;
+        max-width: 354px;
+        transition: transform .0.2s;
+    }
+    
+   }
+   .haircut img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+   }
+
+   .haircut-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: #fff;
+    z-index: 99;
+   }
+
+   .haircut-info button{
+    color: #fff;
+    background-color: #D3AF37;
+    border: 0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: default;
+    
+   }
+
+   @media screen and (max-width: 768px){
+    .haircuts{
+        flex-direction: column;
+    }
+
+    .haircut img{
+        max-width: 740px;
+    }
+   }
+
+   .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: #fff;
+   }
+   
+
+   .footer-icons{
+    display: flex;
+    gap: 8px;
+    color: #fff;
+   }
+
+
+   .btn-whatsapp{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+
+
+
+    img{
+        max-width: 74px;
+        transition: trasform 0.4s;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+   }
+
+   .btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #06121e;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+   }
+    
+   .btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+
+   }
+
+   @media screen and (max-width: 768px){
+    .btn-whatsapp{
+        img{
+            max-width: 64px;
+        }
+    }
+   }
+   iframe{
+    width: 100%;
+    height: 450px;
+    
+     
+   }
+
+   @media screen and (max-width: 768px){
+    body { 
+        width: 100%;
+        height: auto;
+    }
+    .title{
+        display: none;
+    }
+    section{
+        width: 100%;
+        height: auto;
+    
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }   
+    h2{
+        font-size: 28px;
+    }
+
+
+    
+
+    }
+    
+@media screen and (max-width: 768px) {
+    
+    .header-fundo {
+        background-attachment: scroll; /* Melhora performance no mobile */
+        background-size: cover;
+    }
+
+    header, .header-content {
+        flex-direction: column; /* Empilha logo e ícones */
+        gap: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 150px; /* Logo menor no celular */
+    }
+
+    p {
+        font-size: 28px; /* Texto menor para não quebrar muitas linhas */
+        padding: 0 15px;
+    }
+
+    section  {
+            flex-direction: column; 
+        align-items: center;    /* Centraliza tudo horizontalmente */
+        text-align: center;
+        padding: 40px 20px;     /* Espaçamento interno nas laterais */
+        margin-top: 0; 
+    }
+
+    .services-image {
+        width: 90%; /* Ocupa a largura da tela do celular */
+        max-width: 350px;
+        margin: 30px 0; /* Remove o margin-top de 360px */
+    }
+
+    .header-icons {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* 1. Ajuste da Seção About */
+    .about {
+        flex-direction: column;    /* Empilha o conteúdo (geralmente imagem e texto) */
+        align-items: center;       /* Centraliza horizontalmente */
+        justify-content: center;
+        padding: 40px 20px;        /* Espaço interno para o conteúdo não grudar nas bordas */
+        text-align: center;        /* Centraliza os textos internos */
+        width: 100%;
+        margin-top: 0;             /* Remove espaços excessivos do topo */
+    }
+
+    /* 2. Ajuste de imagens ou conteúdos específicos dentro da About */
+    .about img {
+        width: 100%;               /* Faz a imagem ocupar a largura do celular */
+        max-width: 400px;          /* Impede que a imagem fique gigante em tablets */
+        height: auto;
+        margin: 0 0 20px 0;        /* Margem apenas na parte de baixo para separar do texto */
+    }
+
+    /* 3. Ajuste de textos (p, h2, etc) dentro da About */
+    .about p {
+        font-size: 18px;           /* Tamanho de leitura confortável para celular */
+        line-height: 1.6;          /* Melhora o espaçamento entre linhas */
+        margin: 0 auto 20px auto;  /* Centraliza o bloco de texto */
+        max-width: 90%;            /* Evita que o texto encoste nas bordas do aparelho */
+    }
+
+    /* Se você tiver um título na seção about */
+    .about h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #D3AF37;
+    }
+
+
+.social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px; /* Aumenta o espaço entre ícones para facilitar o toque */
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+ 
+
+
+    
+
+ 
+   
